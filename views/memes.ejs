@@ -48,7 +48,7 @@
 
 					</ul>
 					<ul class='nav pull-right'>
-						<li><a href='#'>Welcome <% if(user.userId == 1) { echo "Guest User" } else { %><%= user.userName %><%}%>
+						<li><a href='#'>Welcome <% if(user.userId == 1) { %> Guest User<% } else { %><%= user.userName%>!<% }%>
 
 <!--You will want to add code here (PART 2) to allow you to display a custom message if a user is logged in (Welcome Bob!) or a generic message if no one is logged into the site (Welcome Guest User).  Similarly,
 if a user is not logged in you want a login button to display and no logout button, but if a user is logged in then you want to display a logout button.  You may need to break in and out of Node JS several times using "< % % >" and "< %= % >"-->
