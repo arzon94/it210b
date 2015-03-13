@@ -95,7 +95,7 @@ if a user is not logged in you want a login button to display and no logout butt
 	</div>
 
 	<script>
-	<% if (user==1){ $("a[href='/login'").innerText("Logout");} %>
+	<% if (user==1){ %> $("a[href='/login'").innerText("Logout"); <% } %>
 		// creating a new websocket
 		var socket = io.connect('http://localhost:1337');//change this IP address to the IP address of your server.
 	  	
