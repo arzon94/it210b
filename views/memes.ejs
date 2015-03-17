@@ -48,6 +48,7 @@
 
 					</ul>
 					<ul class='nav pull-right'>
+           				<% if (user!=1){ %><li id='home-nav-item'><a href='http://10.4.72.9/default.aspx?email=<%= user.email %>&name=<%= user.displayName %>'>Create Meme</a></li><% } %>
 						<li><a href='#'>Welcome <% if (user==1){ %> Guest User <% } else { %><%= user.displayName %><% } %>
 
 <!--You will want to add code here (PART 2) to allow you to display a custom message if a user is logged in (Welcome Bob!) or a generic message if no one is logged into the site (Welcome Guest User).  Similarly,
